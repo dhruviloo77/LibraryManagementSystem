@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LibraryMasterPage.master.cs" Inherits="LibraryManagement.LibraryMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="Stylesheets/stylesheet.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-info">
+    <div class ="container mt-0 bg-light align-items-center" style="height: 100vh; width: 100vw;">
+    <form id="form1" runat="server">
+        
+        <div class="sticky-top">
+            <h1>Library Management System</h1>
+        </div>
+        <div class="nav-bar w-100 text-center bg-info text-light" style="font-size: 220%;">
+
+            <asp:Menu ID="Menu1" runat="server" BackColor="Aqua" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" ForeColor="#0033CC" Orientation="Horizontal" StaticSubMenuIndent="10px" Width="100%">
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/mainPage.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Admin/Default.aspx" Text="Admin" Value="Admin">
+                        <asp:MenuItem NavigateUrl="~/Admin/Register.aspx" Text="Register" Value="Register"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Librarian/Default.aspx" Text="Librarian" Value="Librarian"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Member/Default.aspx" Text="Member" Value="Member"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+
+        </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            
+    </form>
+        </div> <!-- container -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

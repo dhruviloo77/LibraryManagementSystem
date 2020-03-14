@@ -1,0 +1,34 @@
+﻿h1 {
+    background-color: rgb(22, 54,100);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+   padding: 10px;
+   text-align: center;
+}
+.nav-bar{
+    background-color: rgb(102, 177, 203);
+    color: white;
+}
+
+
+
+.loginButton {
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+    border-radius: 10px;
+}
+
+.mainPageContent {
+    margin: auto;
+    font-size: 110%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#box-shadow {
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+img{
+    height: 200px;
+}
